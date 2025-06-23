@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="icon" type="image/png" href="Dafsplaining%20PodcastLogo.png">
 <head>
-  <meta charset="UTF-7" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily Weekday Daf Shiur</title>
-  <link rel="icon" href="https://secure-info.github.io/Dafsplaining/Dafsplaining%20PodcastLogo.png" />
+  <link rel="icon" type="image/png" href="https://secure-info.github.io/Dafsplaining/Dafsplaining%20PodcastLogo.png" />
   <style>
     body {
       font-family: sans-serif;
@@ -17,43 +16,59 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      padding: 1rem;
     }
+
     header {
-      padding: 1rem .5rem .5rem;
+      padding-bottom: 1rem;
     }
+
     .logo {
-      width: 120px;
+      width: 100px;
       height: auto;
-      border-radius: .1rem;
+      border-radius: 0.25rem;
+      margin-bottom: 0.5rem;
     }
+
     h1 {
-      font-size: 1.8rem;
-      margin-top: .1rem;
+      font-size: 1.75rem;
+      margin: 0.5rem 0;
     }
+
     p {
-      max-width: 600px;
-      margin: .5rem auto;
-      font-size: 1.1rem;
-      line-height: 1.5;
+      max-width: 90%;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0 auto 1.2rem;
     }
+
     .platforms {
       display: flex;
       gap: 1rem;
       justify-content: center;
-      margin: .1rem .3;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
     }
+
     .platforms a img {
-      width: 72pxpx;
-      height: 72px;
-      transition: transform 0.2s;
+      width: 64px;
+      height: 64px;
+      transition: transform 0.2s ease-in-out;
     }
+
     .platforms a img:hover {
       transform: scale(1.1);
     }
+
+    .contact {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
     footer {
-      font-size: rem;
-      padding: .5rem .6rem;
+      font-size: 0.85rem;
       color: #777;
+      padding-bottom: 1rem;
     }
   </style>
 </head>
@@ -66,7 +81,7 @@
     />
     <h1>Daily Weekday Daf Shiur</h1>
     <p>
-      Join us at  <strong>BJSZ in Baltimore at 5:35 AM</strong> for the Daf Yomi shiur,<br />
+      Join us at <strong>BJSZ in Baltimore at 5:35 AM</strong> for the Daf Yomi shiur,<br />
       <i>leilui nishmas</i> Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l.<br />
       He always pushed us to learn more and would be astonished by our consistency in his honor.
     </p>
@@ -80,10 +95,13 @@
       <img src="https://raw.githubusercontent.com/Secure-info/Dafsplaining/main/spotifylogo.png" alt="Spotify" />
     </a>
   </div>
-  <div> Contact us at <a href="mailto:dafsplaining@gmail.com">dafsplaining@gmail.com</a> </div>
 
- <footer style="margin-top: rem;">
-  © 2025 Dafsplaining. All rights reserved.
-</footer>
+  <div class="contact">
+    Contact us at <a href="mailto:dafsplaining@gmail.com">dafsplaining@gmail.com</a>
+  </div>
+
+  <footer>
+    © 2025 Dafsplaining. All rights reserved.
+  </footer>
 </body>
 </html>
