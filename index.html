@@ -9,66 +9,93 @@
     body {
       font-family: sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
+      padding: 1rem;
+      background-color: #fff;
       color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 1rem;
+      min-height: 100vh;
     }
 
     header {
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
     }
 
     .logo {
-      width: 100px;
+      width: 120px;
       height: auto;
-      border-radius: 0.25rem;
-      margin-bottom: 0.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     h1 {
-      font-size: 1.75rem;
-      margin: 0.5rem 0;
+      font-size: 1.8rem;
+      margin: 0.75rem 0;
+      font-weight: 700;
     }
 
     p {
-      max-width: 90%;
-      font-size: 1rem;
-      line-height: 1.6;
-      margin: 0 auto 1.2rem;
+      max-width: 85%;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 0 auto 1.5rem;
     }
 
     .platforms {
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
       justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     .platforms a img {
-      width: 64px;
-      height: 64px;
+      width: 72px;
+      height: 72px;
       transition: transform 0.2s ease-in-out;
     }
 
-    .platforms a img:hover {
+    .platforms a img:active {
       transform: scale(1.1);
     }
 
     .contact {
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      font-size: 0.85rem;
-      color: #777;
+      font-size: 0.9rem;
+      color: #666;
       padding-bottom: 1rem;
+    }
+
+    /* Mobile-specific adjustments (below 600px) */
+    @media (max-width: 600px) {
+      .logo {
+        width: 100px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .platforms a img {
+        width: 64px;
+        height: 64px;
+      }
     }
   </style>
 </head>
@@ -105,3 +132,4 @@
   </footer>
 </body>
 </html>
+
